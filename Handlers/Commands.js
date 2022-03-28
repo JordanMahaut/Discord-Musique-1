@@ -26,7 +26,7 @@ module.exports = async (client) => {
             if(Perms.includes(command.permission))
             command.defaultPermission = false;
             else
-            return Table.addRow(command.name, "Failed", "ërmission is invalid.")
+            return Table.addRow(command.name, "🔴 Failed", "Permission is invalid.")
         }
 
         client.commands.set(command.name, command);

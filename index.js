@@ -8,4 +8,4 @@ require("./Handlers/Events")(client);
 require("./Handlers/Commands")(client);
 
 
-client.login(Token)
+client.login(Token);
