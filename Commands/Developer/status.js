@@ -5,6 +5,7 @@ require("../../Events/Client/ready");
 module.exports = {
     name: "status",
     description: "Affiche l'état de la connexion du client et de la base de données.",
+    permission: "ADMINISTRATOR",
     /**
      * 
      * @param {CommandInteraction} interaction 
@@ -14,7 +15,7 @@ module.exports = {
 
         const Response = new MessageEmbed()
         .setColor("BLUE")
-        .setDescription(`**Client**: \`🟢 En ligne\` - \`${client.ws.ping}\`\n **Uptime**: <t:${parseInt(client.readyTimestamp / 1000)}:R>\n **Database**: \`${switchTO(connection.readyState)}\``)
+        .setDescription(`**Client**: \`🟢 En ligne\` - \`${client.ws.ping} ms\`\n **Uptime**: <t:${parseInt(client.readyTimestamp / 1000)}:R>\n **Database**: \`${switchTO(connection.readyState)}\``)
 
         interaction.reply({embeds: [Response]})
     }
