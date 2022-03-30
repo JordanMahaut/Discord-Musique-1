@@ -8,5 +8,24 @@
     "mongoose": "^6.2.8",
     "slash-commands": "^1.5.0",
     "slash-create": "^5.3.0"
-  }
+  },
+  "name": "musique-3",
+  "version": "1.0.0",
+  "main": "./Structures/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanMahaut/Discord-Musique-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordanMahaut/Discord-Musique-1/issues"
+  },
+  "homepage": "https://github.com/JordanMahaut/Discord-Musique-1#readme",
+  "description": ""
 }

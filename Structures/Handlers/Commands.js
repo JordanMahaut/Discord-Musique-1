@@ -1,14 +1,10 @@
 const { Perms } = require("../Validation/Permissions");
 const { Client } = require("discord.js");
-const { promisify } = require("util");
-const { glob } = require("glob");
-const PG = promisify(glob);
-const Ascii = require("ascii-table");
 
 /**
  * @param {Client} client
  */
-module.exports = async (client) => {
+module.exports = async (client, PG, Ascii) => {
     const Table = new Ascii("Commande chargée");
 
     CommandsArray = [];
@@ -23,7 +19,7 @@ module.exports = async (client) => {
         return Table.addRow(command.name, "🔸 FAILED", "missing a description.");
 
         if(!command.permission) {
-            if(Perms.includes(command.permission))
+            if(!Perms.includes(command.permission))
             command.defaultPermission = false;
             else
             return Table.addRow(command.name, "🔴 Failed", "Permission is invalid.")
@@ -48,7 +44,7 @@ module.exports = async (client) => {
                 const cmdPerms = CommandsArray.find((c) => c.name === commandName).permission;
                 if(!cmdPerms) return null;
 
-                return MainGuild.roles.cache.filter((r) => r.permissions.has(cmdPerms))
+                return MainGuild.roles.cache.filter((r) => r.permissions.has(cmdPerms) && !r.managed).first(10);
             }
 
             const fullPermissions = command.reduce((accumulator, r) => {
