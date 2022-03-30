@@ -32,7 +32,7 @@ module.exports = async (client) => {
         client.commands.set(command.name, command);
         CommandsArray.push(command);
 
-        await Table.addRow(command.name, "✔ Succès");
+        await Table.addRow(command.name, "✅ Succès");
 
     })
 
