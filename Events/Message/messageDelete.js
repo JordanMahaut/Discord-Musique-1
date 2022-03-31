@@ -11,7 +11,7 @@ module.exports = {
 
         const Log = new MessageEmbed()
         .setColor("#36393f")
-        .setDescription(`📕 Un [message](${message.url}) par ${message.author.tag} a été **supprimer**.\n
+        .setDescription(`📕 Un [message](${message.url}) de ${message.author.tag} a été **supprimer** .\n
         **Message supprimé:**\n ${message.content ? message.content : "None"}`.slice(0, 4000))
 
         if(message.attachments.size >= 1){

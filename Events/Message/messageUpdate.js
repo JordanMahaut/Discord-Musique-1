@@ -18,7 +18,7 @@ module.exports = {
 
         const log = new MessageEmbed()
         .setColor("#36393f")
-        .setDescription(`📘 A [message](${newMessage.url}) par ${newMessage.author} **a été modifié** dans ${newMessage.channel}.\n
+        .setDescription(`📘 Un [message](${newMessage.url}) de ${newMessage.author} **a été modifié** dans ${newMessage.channel}.\n
         **Original**:\n ${Original} \n**Modifié**:\n ${Edited}`.slice("0", "4096"))
 
         new WebhookClient({url: "https://discord.com/api/webhooks/959181948444614800/pVnIy8FIUFvCwMjfLHoklYClmjxHTzNmVvSX-2MYpd7q2S2Eem2gbDsxPtrPPXUBWx_B"}
