@@ -95,10 +95,29 @@ module.exports = {
             break;
 
             case "actions" : {
-                const choices = options.getString("options");
-                
-                switch(choices){
+                const choice = options.getString("options");
 
+                switch(choice) { 
+                    case "end" : {
+
+                    }
+                    break;
+                    case "end" : {
+
+                    }
+                    break;
+                    case "end" : {
+
+                    }
+                    break;
+                    case "end" : {
+
+                    }
+                    break;
+                    case "end" : {
+
+                    }
+                    break;
                 }
             }
             break;
