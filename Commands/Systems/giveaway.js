@@ -82,5 +82,26 @@ module.exports = {
 
         const Sub = options.getSubcommand();
         
+        const errorEmbed = new MessageEmbed()
+        .setColor("RED");
+
+        const successEmbed = new MessageEmbed()
+        .setcolor("GREEN");
+
+        switch(Sub) {
+            case "start" : {
+
+            }
+            break;
+
+            case "actions" : {
+                const choices = options.getString("options");
+                
+                switch(choices){
+
+                }
+            }
+            break;
+        }
     }
 }
