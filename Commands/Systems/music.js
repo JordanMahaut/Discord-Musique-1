@@ -10,7 +10,7 @@ module.exports = {
             name: "play",
             description: "Jouer une musique.",
             type: "SUB_COMMAND",
-            option: [{ name: "query", description: "Indiquez un nom ou une URL pour la musique", type: "STRING", required: true}]
+            options: [{ name: "query", description: "Indiquez un nom ou une URL pour la musique", type: "STRING", required: true}]
         },
         {
             name: "volume",
@@ -53,7 +53,7 @@ module.exports = {
                     return interaction.reply({content: "🎼 Demande reçue."});
                 }
                 case "volume" : {
-                    const volume = options.getNumber("percent");
+                    const Volume = options.getNumber("percent");
                     if(Volume > 100 || Volume < 1)
                     return interaction.reply({content: "Vous devez spécifier un nombre entre 1 et 100."});
 

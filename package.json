@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@discordjs/opus": "github:discordjs/opus",
     "@discordjs/rest": "^0.3.0",
     "@distube/spotify": "^1.2.1",
     "ascii-table": "^0.0.9",
