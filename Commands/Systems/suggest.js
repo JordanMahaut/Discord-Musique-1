@@ -13,16 +13,12 @@ module.exports = {
             type: "STRING",
             choices: [
                 {
-                    name: "Command",
-                    value: "Command"
+                    name: "Ajout de Commande",
+                    value: "Ajout de Commande"
                 },
                 {
-                    name: "Event",
-                    value: "Event"
-                },
-                {
-                    name: "System",
-                    value: "System"
+                    name: "Ajout de channel",
+                    value: "Ajout de channel"
                 },
             ]
         },
@@ -54,10 +50,10 @@ module.exports = {
         const Response = new MessageEmbed()
         .setColor("AQUA")
         .setDescription(`${interaction.member} a proposé une ${type}.`)
-        .addField("Name", `${name}`, true)
-        .addField("Functionality", `${funcs}`, true)
+        .addField("Nom", `${name}`, true)
+        .addField("Fonctionnalité", `${funcs}`, true)
         const message = await interaction.reply({embeds: [Response], fetchReply: true})
-        message.react("🟩")
-        message.react("🟥")
+        message.react("✅")
+        message.react("❌")
     }
 }
