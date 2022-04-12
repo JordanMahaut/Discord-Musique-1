@@ -4,8 +4,7 @@ const {
   MessageActionRow,
   MessageButton
 } = require("discord.js");
-const DB = require("../../Structures/Schemas/SuggestDB");
-const { permission, execute } = require("./music");
+const DB = require("../../Structures/Schemas/suggestdbs")
 
 module.exports = {
   name: "suggest",
@@ -63,7 +62,7 @@ module.exports = {
 
             const M = await interaction.reply({embeds: [Embed], components: [Buttons], fetchReply: true});
 
-            await DB.create({GuildId: guildId, MessageID: M.id, Details: [
+            await DB.create({GuildID: guildId, MessageID: M.id, Details: [
                 {
                     MemberID: member.id,
                     Type: Type,

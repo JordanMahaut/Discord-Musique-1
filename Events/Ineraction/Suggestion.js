@@ -1,6 +1,5 @@
 const { ButtonInteraction } = require("discord.js");
-const { execute } = require("../../Commands/Systems/music");
-const DB = require('../../Structures/Schemas/SuggestDB');
+const DB = require('../../Structures/Schemas/suggestdbs');
 
 module.exports = {
     name: "interactionCreate",
@@ -25,15 +24,15 @@ module.exports = {
 
             switch(customId) {
                 case "suggest-accept": {
-                    Embed.fields[2] = {name: "Status :", value: "Accepter", inline: true};
+                    Embed.fields[2] = {name: "Status", value: "✅ Accepter", inline: true};
                     message.edit({embeds: [Embed.setColor("GREEN")]});
-                    interaction.reply({content: "Suggestion accepter", ephemeral: true})
+                    return interaction.reply({content: "Suggestion accepter", ephemeral: true})
                 }
                 break;
                 case "suggest-decline": {
-                    Embed.fields[2] = {name: "Status :", value: "Refuser", inline: true};
+                    Embed.fields[2] = {name: "Status", value: "⛔ Refuser", inline: true};
                     message.edit({embeds: [Embed.setColor("RED")]});
-                    interaction.reply({content: "Suggestion refuser", ephemeral: true})
+                    return interaction.reply({content: "Suggestion refuser", ephemeral: true})
                 }
                 break;
             }
