@@ -15,15 +15,15 @@ module.exports = {
         { name: "settings", description: "Sélectionner dans les options.", type: "SUB_COMMAND",
             options: [{ name: "options", description: "Sélectionner dans les options", type: "STRING", required: true,
             choices: [
-                {name: "🔢 View Queue", value: "queue"},
-                {name: "⏭️ Skip Song", value: "skip"},
-                {name: "⏸️ Pause Song", value: "pause"},
-                {name: "▶️ Resume Song", value: "resume"},
+                {name: "🔢 Afficher la file d’attente", value: "queue"},
+                {name: "⏭️ Skip", value: "skip"},
+                {name: "⏸️ Pause", value: "pause"},
+                {name: "▶️ Reprendre la musique", value: "resume"},
                 {name: "⏹️ Stop Music", value: "stop"},
-                {name: "🔀 Shuffle Queue", value: "suffle"},
-                {name: "🔃 Toggle Autoplay Modes", value: "AutoPlay"},
-                {name: "🈁 Add a Related Song", value: "RelatedSong"},
-                {name: "🔁 Toggle Repeat Mode", value: "RepeatMode"}
+                {name: "🔀 File d’attente aléatoire", value: "suffle"},
+                {name: "🔃 Basculer en mode lecture automatique", value: "AutoPlay"},
+                {name: "🈁 Ajouter une chanson associée", value: "RelatedSong"},
+                {name: "🔁 Basculer en mode répétition", value: "RepeatMode"}
             ]}]
         }
     ],

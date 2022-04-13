@@ -26,13 +26,13 @@ module.exports = {
                 case "suggest-accept": {
                     Embed.fields[2] = {name: "Status", value: "✅ Accepter", inline: true};
                     message.edit({embeds: [Embed.setColor("GREEN")]});
-                    return interaction.reply({content: "Suggestion accepter", ephemeral: true})
+                    return interaction.reply({content: "Suggestion accepté", ephemeral: true})
                 }
                 break;
                 case "suggest-decline": {
                     Embed.fields[2] = {name: "Status", value: "⛔ Refuser", inline: true};
                     message.edit({embeds: [Embed.setColor("RED")]});
-                    return interaction.reply({content: "Suggestion refuser", ephemeral: true})
+                    return interaction.reply({content: "Suggestion refusé", ephemeral: true})
                 }
                 break;
             }
