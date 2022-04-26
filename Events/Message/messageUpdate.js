@@ -21,7 +21,7 @@ module.exports = {
         .setDescription(`📘 Un [message](${newMessage.url}) de ${newMessage.author} **a été modifié** dans ${newMessage.channel}.\n
         **Original**:\n ${Original} \n**Modifié**:\n ${Edited}`.slice("0", "4096"))
 
-        new WebhookClient({url: "https://discord.com/api/webhooks/959181948444614800/pVnIy8FIUFvCwMjfLHoklYClmjxHTzNmVvSX-2MYpd7q2S2Eem2gbDsxPtrPPXUBWx_B"}
+        new WebhookClient({url: "https://discord.com/api/webhooks/961674034708381736/RbcxEHrli4tFopfgTujB2YbrmlSWx27NrNp3-THwLh1m9FXMqvMR6jJdZQvP9NOnQDTj"}
         ).send({embeds: [log]}).catch((err) => console.log(err));
     }
 }
