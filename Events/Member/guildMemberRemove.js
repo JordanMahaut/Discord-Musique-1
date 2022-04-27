@@ -12,8 +12,8 @@ module.exports = {
 
         // Créer un Webhook remove.
         const Loger = new WebhookClient({
-            id: "958484623145435136",
-            token: "I-Ztddw4vAR4fIizSt_F4LMd0XFYXDwryQ5j1sqTcTCTrnXRH6EqBkSteP5FGU9ZVr8_"
+            id: "961674772754870414",
+            token: "runvY0-zhictev8kF7KqDzl1dg_ctoU2hGGEbxzt8wLCg_9NwT6zqWpI5mFQb8k5c8CG"
         });
 
         const Welcome = new MessageEmbed()
