@@ -32,7 +32,7 @@ module.exports = {
     }
 
     new WebhookClient({
-      url: "https://discord.com/api/webhooks/961673720785682442/173GmCjW__LhU5VWXZpzXzymWyIZc30Ek6rCS34Zo0W-dvchfKqBZj60NAqeX2Hw0uhZ",
+      url: "https://discord.com/api/webhooks/959207329386082334/t8jE7xpJRMUR2H8TROC3ITKXMZfC1y1oHkl4BsvT_ip2Dn3LfkGvd7MXXkT0OkkovJvr",
     })
       .send({ embeds: [Log] })
       .catch((err) => {

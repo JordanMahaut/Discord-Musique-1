@@ -1,0 +1,26 @@
+[33m2f7335c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: pull: Merge made by the 'ort' strategy.
+[33mc6426b8[m HEAD@{1}: commit: fusion
+[33me861ef6[m HEAD@{2}: commit: Fusion
+[33m7d1d583[m HEAD@{3}: commit: Suggestion Avancé
+[33m943fc97[m HEAD@{4}: commit: Modification suggest
+[33md8d1c49[m HEAD@{5}: commit: Modification music et suggest
+[33mcedbf32[m HEAD@{6}: commit: Fusion
+[33m2f8057c[m HEAD@{7}: commit: Music
+[33mf1ef582[m HEAD@{8}: commit: Music
+[33ma33d38b[m HEAD@{9}: commit: giveaway
+[33mb7f0d92[m HEAD@{10}: commit: Giveaway
+[33m8590cf7[m HEAD@{11}: pull: Fast-forward
+[33m3b6bc34[m HEAD@{12}: commit: Giveaway
+[33m1a0704a[m HEAD@{13}: commit: Message
+[33m85c1bf6[m HEAD@{14}: commit: Dectection Nitro boost
+[33m2e0b3bd[m HEAD@{15}: commit: Amélioration de la structure
+[33m761e37a[m HEAD@{16}: commit: Userinfo
+[33m4af23c2[m HEAD@{17}: commit: Ajout de la commande clear
+[33m5b564e9[m HEAD@{18}: commit: GuildMember
+[33m1ea5154[m HEAD@{19}: commit: Correction de texte
+[33mb149d64[m HEAD@{20}: commit: Config des permissions / command
+[33ma91e69a[m HEAD@{21}: commit: Création de la basee de donnée + Ajout de l'extension mongoose
+[33m4019864[m HEAD@{22}: commit: Ajout du gitignore
+[33mf4fd2b4[m HEAD@{23}: commit: Configuration du bot
+[33m3b5044e[m HEAD@{24}: commit: Push 2
+[33m0dadbc2[m HEAD@{25}: commit (initial): Initialisation projet
